@@ -1,0 +1,404 @@
+:root{
+    --red: rgb(182, 11, 11);
+
+}
+
+::-webkit-scrollbar{
+    width:0.75em;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(90deg,var(--red),rgb(214, 32, 32));;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(34, 33, 33);
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+button{
+    cursor: pointer;
+    overflow: hidden;
+}
+
+body{
+    background: linear-gradient(45deg,rgba(3, 3, 3, 0.952),rgba(15, 14, 14, 0.993),rgb(26, 25, 25));
+}
+
+header{
+    color:#fff;
+}
+
+header .top{
+    overflow: hidden;
+    width:100%;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10em 0 5em;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+header .top nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 25em;
+}
+
+header .top ul li{
+    list-style: none;
+    font-weight: 500;
+}
+
+header .top ul li a{
+    transition: 1s;
+    cursor: pointer;
+}
+header .top ul li a:hover{
+    color: var(--red)
+} 
+
+header .top h1{
+    font-weight: 600;
+    letter-spacing: 0.20em;
+    margin-right: 20em;
+}
+
+header h1 span{
+    color: var(--red)
+}
+/* ------------------------------------------------------------------------------------------ */
+
+header .me{
+    padding: 3em 10em 0 5em;
+    height: 20em;
+
+}
+
+header .me figure{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.me figure img{
+    position: absolute;
+    left: 2em;
+    top: -2em;
+    z-index: 0;
+}
+
+.me figure figcaption{
+    align-self: flex-start;
+    position: relative;
+    left: 10em;
+    width: 50%;
+    word-wrap: break-word;
+}
+
+.me figure figcaption p:first-child{
+    color: var(--red);
+    font-size: large;
+    font-weight: 500;
+}
+
+.me figure figcaption h2{
+    font-size: 3em;
+}
+
+.me figure figcaption .description{
+    margin-bottom: 1em;
+}
+
+.me figure button{
+    color: #fff;
+    background: linear-gradient(90deg,var(--red),rgb(214, 32, 32));
+    text-transform: uppercase;
+    padding: 0.65em 1.75em 0.65em 1.75em;
+    border: 0;
+    outline: 0;
+}
+
+
+/* --------------------------------------------------------------------------------------------------- */
+
+.space{
+    position: relative;
+    width: 50%;
+    height: 40em;
+    z-index: 0;
+    background-color: rgb(34, 33, 33);
+    left: -5em;
+    top: -1em;
+    
+}
+
+
+/* ==================================================================================================== */
+
+
+main{
+    position: relative;
+    z-index: 100;
+    margin-top: 5em;
+    padding: 0 10em 0 5em;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+main .about{
+    height: 15em;
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+main .about h2{
+    font-size: 4.25em;
+}
+
+main .about h2 span{
+    text-shadow:  0.35em 0.4em 5px rgba(83, 67, 67, 0.719);
+}
+
+main .about p span:first-child{
+    font-size: large;
+    align-self: center;
+    font-weight: 600;
+}
+
+main .about p :last-child{
+    color:rgba(131, 126, 126, 0.945);
+    margin-left: 1em;
+    font-size: medium;
+    font-weight: 500;
+}
+  
+
+/* -------------------------------------------------------------------------- */
+
+main .projects .completed{
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+main .projects .completed button{
+    color: var(--red);
+    text-transform: uppercase;
+    padding: 0.65em 1.75em 0.65em 1.75em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+}
+
+main .projects .completed h2{
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1em;
+
+}
+
+.projects .completed h2 button{
+    color: #fff;
+    background: linear-gradient(90deg,var(--red),rgb(214, 54, 54));
+    
+}
+
+main .projects .completed figure img{
+    width:100%;
+    height:75%;
+    box-shadow: 0.5em 0.75em 1em black;
+}
+
+main .projects figure figcaption{
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.25em;
+    background-color: rgb(34, 33, 33);
+}
+
+main .projects .completed button img{
+    width: 1em;
+    height: 1em;
+    margin-left: 0.25em;
+    box-shadow: none;
+}
+
+main .projects .completed figure {
+    display: inline-block;
+    width: 45%;
+    height: 20em;
+
+}   
+
+.projects .completed figure:nth-child(2),
+.projects .completed figure:nth-child(4){
+    margin-right: 6.5em;
+}
+
+main .projects .completed figure button{
+    padding-left:0; 
+}
+
+
+
+/*--------------------------------------------------------------------------------------*/
+
+main .projects .future{
+    margin-bottom: 15em;
+}
+
+main .projects .future button{
+    color: var(--red);
+    text-transform: uppercase;
+    padding: 0.65em 1.75em 0.65em 1.75em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+}
+
+main .projects .future h2{
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1em;
+
+}
+
+.projects .future h2 button{
+    color: #fff;
+    background: linear-gradient(90deg,var(--red),rgb(214, 54, 54));
+    
+}
+
+main .projects .future figure img{
+    width:100%;
+    height:75%;
+    box-shadow: 0.5em 0.75em 1em black;
+}
+
+main .projects .future figure figcaption{
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+}
+
+main .projects .future button img{
+    width: 1em;
+    height: 1em;
+    margin-left: 0.25em;
+    box-shadow: none;
+}
+
+main .projects .future figure {
+    display: inline-block;
+    width: 45%;
+    height: 20em;
+
+}   
+
+.projects .future figure:nth-child(2),
+.projects .future figure:nth-child(4){
+    margin-right: 6.5em;
+}
+
+main .projects .future figure button{
+    padding-left:0; 
+}
+
+/*==========================================================================================*/
+
+
+
+footer{
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding-bottom: 2em;
+}
+
+footer .contact{
+    color: #fff;
+    padding: 0 7.5em 0 4em;
+    background-color: rgb(34, 33, 33);
+    position: relative;
+    width:65%;
+    height: 14em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: -7em;
+}
+
+footer .contact button{
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0.65em 2.25em 0.65em 2.75em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    outline: 0;
+    background: linear-gradient(90deg,var(--red),rgb(214, 54, 54));  
+}
+
+footer .contact .message{
+    width: 62%;
+}
+
+footer .contact .message h2{
+    font-size: 2em;
+    margin-bottom: 0.25em;
+}
+
+footer .contact .message p{
+    color:rgb(78, 69, 69);
+}
+
+/*----------------------------------------------------------------------------*/
+
+footer .nav-foot{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 35%;
+    height:5em;
+
+}
+
+footer .nav-foot img{
+    width: 2em;
+    height:2em;
+}
+
+
+
